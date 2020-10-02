@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Product Landing Page</title>
+		<style>
+			*{
+					box-sizing: border-box;
+			}
+			root, body{
+					margin: 0;
+					padding: 0;
+			}
+			img{
+					max-width: 100%;
+					object-fit: cover;
+			}
+			.container, nav ul{
+					width: 100%;
+          max-width: 1030px;
+          margin: 0 auto;
+					padding: 0 15px;
+			}
+			nav{
+					top: 0;
+					height: 40px;
+					background: #333;
+					color: aliceblue;
+					width: 100%;
+					position:fixed;
+					z-index: 1;
+			}
+			nav ul{
+					list-style: none;
+					display: block;
+			}
+			nav ul li{
+					display: inline-block;
+					height: 40px;
+					padding: 0;
+					margin: 0;
+			}
+			nav ul li a{
+					display: block;
+					color: white;
+					line-height: 40px;
+					text-decoration: none;
+					margin-right: 10px;
+					transition-duration: 400ms;
+			}
+			header #header-img{
+					max-height: 600px;
+					width: 100%;
+			}
+			iframe{
+					max-width: 100%;
+			}
+			#form{
+					display: flex;
+					flex-direction: column;
+					width: 50%;
+					padding: 50px 20px;
+					background: azure;
+					box-shadow: 0 0 10px #333333;
+					border-radius: 10px;
+					margin: 50px auto 50px;
+			}
+			input{
+					margin-bottom: 20px;
+					height: 40px;
+					border: 2px solid #09aaf0;
+					border-radius: 5px;
+					padding: 0 10px;
+					background: white;
+			}
+			label{
+					margin-bottom: 5px;
+			}
+			@media screen and(max-width: 600px){
+					label{
+							display: none;
+					}
+			}
+		</style>
+	</head>
+	<body>
+		<header id="header">
+			<img id="header-img" src="https://robertsspaceindustries.com/media/k4wwe7c9j342qr/source/Hhui677dl-Min.jpg" alt="Anvil Valkyrie Dropship">
+			<nav id="nav-bar">
+				<ul>
+					<li><a href="#header" class="nav-link">Home</a></li>
+					<li><a href="#video" class="nav-link">About</a></li>
+					<li><a href="#form" class="nav-link">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="container">
+			<iframe id="video" width="1130" height="653" src="https://www.youtube.com/embed/_RmaaxMW2uQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<form action="https://www.freecodecamp.com/email-submit" method="POST" id="form">
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" required placeholder="Your email">
+				<input type="submit" id="submit" value="Keep me Updated">
+			</form>
+		</div>
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	</body>
+</html>
